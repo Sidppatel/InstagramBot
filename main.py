@@ -14,7 +14,7 @@ class InstaBot:
         self.driver.find_element_by_xpath("/html/body/div[1]/div[3]/div[1]/div/div/div[2]/div[1]/form/div/div[2]/input").send_keys(pw)
         self.driver.find_element_by_xpath("/html/body/div[1]/div[3]/div[1]/div/div/div[2]/div[1]/form/div/div[3]/button").click()
         sleep(2)
-        self.driver.find_element_by_xpath("/html/body/div[4]/div/div/div[3]/button[2]").click()
+        self.driver.find_element_by_xpath("//*[text()='Not Now']").click()
         sleep(1)
 
     def _go_to_profile(self):
